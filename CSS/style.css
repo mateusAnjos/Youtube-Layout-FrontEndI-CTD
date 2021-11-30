@@ -1,0 +1,192 @@
+/*INTEGRANTES
+Thiago Dias
+Erika Pereira Franco
+Ricardo Carvalho
+André Ferreira Pires
+Mateus Anjos
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Gudea&family=Playfair+Display:wght@500&family=Roboto&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+.container{
+  display: grid;
+  grid-template-columns: 8fr 2fr;
+  grid-template-areas: 
+  'header header'
+  'main aside'
+}
+header{
+  grid-area: header;
+  background-color:rgb(255, 255, 255);
+  height: 50px;
+  padding: 0.5rem
+}
+header img{
+  width: 10rem;
+  margin-left: 10px;
+  cursor: pointer;
+}
+main{
+  grid-area: main;
+  background-color:rgb(249, 249, 249);
+  display: flex-wrap;
+  justify-content: left;
+  padding: 1rem;
+  border-radius: 5px;
+}
+.conteudo{
+  display: flex;
+  justify-content: center;
+}
+
+.principal img{
+  width:1280px;
+  height: 600px;
+  border-radius: 5px;
+ 
+}
+
+.titulo-principal{
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.spec-principal{
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.descricao-principal{
+  font-size: 14px;
+  margin-top: 30px;
+  width: 800px;
+}
+
+.botoes{
+  display:flex;
+  justify-content: right;
+}
+
+.subscribe{
+  background-color: #c00;
+  padding: 10px 16px;
+  color: white;
+  font-weight: bold;
+  border-radius: 2px;
+  border-style: none;
+  cursor: pointer;
+}
+
+.subscribe:active{
+  background-color: rgb(182, 70, 70);
+}
+
+aside{
+  grid-area: aside;
+  background-color:rgb(255, 255, 255);
+  padding: 1rem;
+}
+
+.videoRecomendation{
+  display: flex;
+  margin-bottom: 10px;
+  border-bottom: 1px solid lightgray;
+  padding: 5px;
+  padding-bottom: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition-property: background-color;
+  transition-duration: 200ms
+}
+
+.videoRecomendation:hover{
+  background-color: rgb(235, 235, 235)
+}
+
+.thumbnail img{
+  width: 200px;
+  margin-right: 5px
+}
+
+h2{
+  font-size: 1rem;
+}
+
+.contentVideoRecomendation{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between
+}
+.conteudo{
+  background-color:rgb(235, 235, 235);
+  padding: 8px;
+  border-radius: 5px
+}
+
+.comentarios h1{
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.form-comentario{
+  display: flex;
+  align-content: left;
+}
+
+.form-comentario img {
+  margin:15px;
+  width:70px;
+  height:70px;
+  border-radius: 50%;
+  background-color:white;
+}
+
+.box-comentario {
+  border:0;
+  font-family: 'Roboto', sans-serif;
+  border-bottom: 1px solid lightgray;
+  background-color:transparent;
+  margin:40px;
+}
+
+.comentario{
+  display:flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.icone img{
+  margin:15px;
+  width:70px;
+  height:70px;
+  border-radius: 50%;
+  background-color:white;
+}
+
+.coment-info{
+  display:block;
+  justify-content: left;
+}
+
+.like-box img {
+  margin:15px;
+  width:15px;
+  height:15px;
+}
+
+.nome {
+  font-weight: bold;
+}
+
+.like-box{
+  display: flex;
+  align-items: center;
+}
